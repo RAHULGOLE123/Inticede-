@@ -47,14 +47,14 @@ const Header = () => {
 
   return (
     <header 
-      className={`bg-white sticky top-2 z-50 transition-all duration-300 ${
+      className={`bg-white fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'shadow-md border-b border-gray-200' : 'shadow-sm border-b border-gray-100'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 lg:h-19 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           
-          <nav className="hidden lg:flex space-x-8 mt-6">
+          <nav className="hidden lg:flex mt-5 space-x-8">
             <Link 
               href="/about" 
               className="text-[#1f3a93] hover:text-[#2e395f] font-medium transition-all duration-200 hover:underline underline-offset-4 decoration-2"
@@ -81,19 +81,19 @@ const Header = () => {
             </Link>
           </nav>
           
-          <div className="flex-1 lg:flex-none lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+          <div className="flex-1 lg:flex-none lg:absolute lg:mt-1 lg:left-1/2 lg:transform lg:-translate-x-1/2">
             <Link href="/" className="flex items-center">
               <Image 
                 src="/assets/inticedelogo.png" 
                 alt="Logo" 
-                width={64}
-                height={64}
-                className="h-16 w-auto"
+                width={65}
+                height={65}
+                className="h-15 w-auto"
               />
             </Link>
           </div> 
           
-          <nav className="hidden lg:flex space-x-8 mt-6">
+          <nav className="hidden lg:flex mt-5 space-x-8">
             <Link 
               href="/network" 
               className="text-[#1f3a93] hover:text-[#2e395f]  font-medium transition-all duration-200 hover:underline underline-offset-4 decoration-2"
@@ -157,14 +157,14 @@ const Header = () => {
                 Services
               </Link>
               <Link 
-                href="#products" 
+                href="/products" 
                 className="px-4 py-3 text-[#1f3a93] hover:text-[#2e395f]  hover:bg-white rounded-lg mx-2 transition-all duration-200 font-medium"
                 onClick={handleLinkClick}
               >
                 Products
               </Link>
               <Link 
-                href="#clients" 
+                href="/clients" 
                 className="px-4 py-3 text-[#1f3a93] hover:text-[#2e395f]  hover:bg-white rounded-lg mx-2 transition-all duration-200 font-medium"
                 onClick={handleLinkClick}
               >
@@ -172,28 +172,28 @@ const Header = () => {
               </Link>
               <div className="border-t border-gray-200 my-2 mx-2"></div>
               <Link 
-                href="#network" 
+                href="/network" 
                 className="px-4 py-3 text-[#1f3a93] hover:text-[#2e395f]  hover:bg-white rounded-lg mx-2 transition-all duration-200 font-medium"
                 onClick={handleLinkClick}
               >
                 Network
               </Link>
               <Link 
-                href="#events" 
+                href="/events" 
                 className="px-4 py-3 text-[#1f3a93] hover:text-[#2e395f]  hover:bg-white rounded-lg mx-2 transition-all duration-200 font-medium"
                 onClick={handleLinkClick}
               >
                 Events
               </Link>
               <Link 
-                href="#connect" 
+                href="/connect" 
                 className="px-4 py-3 text-[#1f3a93] hover:text-[#2e395f]  hover:bg-white rounded-lg mx-2 transition-all duration-200 font-medium"
                 onClick={handleLinkClick}
               >
                 Connect
               </Link>
               <Link 
-                href="#careers" 
+                href="/careers" 
                 className="px-4 py-3 text-[#1f3a93] hover:text-[#2e395f]  hover:bg-white rounded-lg mx-2 transition-all duration-200 font-medium"
                 onClick={handleLinkClick}
               >

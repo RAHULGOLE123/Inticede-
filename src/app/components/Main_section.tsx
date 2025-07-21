@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 mt-18 sm:px-6 lg:px-8">
       <div className="py-4">
         <div className="relative w-full aspect-[16/8]">
           <Image
